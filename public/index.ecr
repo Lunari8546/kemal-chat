@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kemal Chat</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="https://kemalcr.com/img/kemal.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <pre id="chat"></pre>
+            <form>
+                <input id="msg" placeholder="Input message here..." maxlength="30" />
+                <input id="submit" type="submit" value="Send" autocomplete="false">
+            </form>
+        </div>
+    </body>
+    <style>
+        ::-webkit-scrollbar {
+            width: 6px
+        }
+    
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 0px
+        }
+    
+        ::-webkit-scrollbar-thumb {
+            background: #262626;
+            border-radius: 50px
+        }
+    </style>
+    <script src="./js/app.js" defer></script>
+</html>

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+$base-color: #f6d1b4;
+$secondary-color: #f1f1f1;
+$text-color: #262626;
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    outline: none;
+    overflow: hidden;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $base-color;
+    color: $text-color;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+    height: 40rem;
+    background-color: $secondary-color;
+    box-shadow: 0px 16px 35px -6px rgba(38,38,38,0.67);
+}
+
+.container pre {
+    font-size: 1.2rem;
+    height: 30rem;
+    padding-left: 40px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    overflow-y: scroll;
+    border-bottom: 1px solid $text-color;
+    line-height: 1.6rem;
+}
+
+.container #msg {
+    background-color: $secondary-color;
+    border: none;
+    height: 3rem;
+    width: 20rem;
+    border-bottom: 1px solid $text-color;
+    margin-left: 40px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container #submit {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $secondary-color;
+    border: 1px solid $text-color;
+    padding: 20px;
+    margin-left: 20px;
+    transition: border-radius 0.2s ease-in-out;
+}
+
+.container #submit:hover {
+    border-radius: 20px;
+}
